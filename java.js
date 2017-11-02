@@ -22,11 +22,6 @@ console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
 
 
 
-
-
-
-
-
 $("#submitButton").on("click", function(){
 	console.log("submit button working");
 	event.preventDefault();
@@ -63,7 +58,12 @@ db.ref("schedule").on("child_added", function(snapshot){
     console.log("ARRIVAL TIME: " + moment(nextTrain).format("MMMM Do YYYY, h:mm:ss a"));
 
 
-	$("#table-body").append(`<tr><td>${data.trainName}</td><td>${data.destination}</td><td>${data.frequency}</td><td>${nextTrain}</td><td>${MinutesTillTrain}</td></tr>`)
+	$("#table-body").append(`<tr><td>${data.trainName}
+		</td><td>${data.destination}
+		</td><td>${data.frequency}
+		</td><td>${nextTrain}
+		</td><td>${MinutesTillTrain}
+		</td></tr>`)
 });
 
 
