@@ -24,7 +24,7 @@ console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
 
 
 
-$("#currentTime").text(currentTime);
+
 
 
 $("#submitButton").on("click", function(){
